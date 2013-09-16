@@ -56,6 +56,8 @@
 		1204D5E417E34C6E004BBA73 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncImageView.h; path = AsyncImageView/AsyncImageView.h; sourceTree = "<group>"; };
 		1204D5E517E34C6E004BBA73 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncImageView.m; path = AsyncImageView/AsyncImageView.m; sourceTree = "<group>"; };
 		120B324817E1F3560036CDF0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1244948317E7678A00D31B55 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		1244948417E7678A00D31B55 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		1244BDD817E05C87001D610D /* GamePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePickerViewController.h; sourceTree = "<group>"; };
 		1244BDD917E05C87001D610D /* GamePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
 		1244BDDB17E099A6001D610D /* PDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDetailViewController.h; sourceTree = "<group>"; };
@@ -156,6 +158,8 @@
 		124DF0ED17DF55F900EB11C1 /* Ratings */ = {
 			isa = PBXGroup;
 			children = (
+				1244948317E7678A00D31B55 /* SWRevealViewController.h */,
+				1244948417E7678A00D31B55 /* SWRevealViewController.m */,
 				1204D5E417E34C6E004BBA73 /* AsyncImageView.h */,
 				1204D5E517E34C6E004BBA73 /* AsyncImageView.m */,
 				124DF13B17DF60F200EB11C1 /* PlayersViewController.h */,

@@ -16,8 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     players = [NSMutableArray arrayWithCapacity:20];
-	UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-	UINavigationController *navigationController = [[tabBarController viewControllers] objectAtIndex:0];
+	UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
 	PlayersViewController *playersViewController = [[navigationController viewControllers] objectAtIndex:0];
 	playersViewController.players = players;
     // Override point for customization after application launch.
