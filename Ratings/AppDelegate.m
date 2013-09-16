@@ -5,13 +5,21 @@
 //  Created by Gludis on 9/10/13.
 //  Copyright (c) 2013 Gludis. All rights reserved.
 //
-
 #import "AppDelegate.h"
+#import "Player.h"
+#import "PlayersViewController.h"
 
-@implementation AppDelegate
 
+@implementation AppDelegate{
+    NSMutableArray *players;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    players = [NSMutableArray arrayWithCapacity:20];
+	UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+	UINavigationController *navigationController = [[tabBarController viewControllers] objectAtIndex:0];
+	PlayersViewController *playersViewController = [[navigationController viewControllers] objectAtIndex:0];
+	playersViewController.players = players;
     // Override point for customization after application launch.
     return YES;
 }
