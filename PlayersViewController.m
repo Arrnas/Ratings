@@ -13,6 +13,7 @@
 #import "PDetailViewController.h"
 #import "Player.h"
 #import "PlayerCell.h"
+#import "MFSideMenu.h"
 #import "AsyncImageView.h"
 #import <QuartzCore/QuartzCore.h>
 
@@ -30,6 +31,10 @@
     }
     return self;
 }
+- (IBAction)sidebarMenu:(id)sender {
+    [self.menuContainerViewController toggleLeftSideMenuCompletion:nil];
+}
+
 -(void) recievePlayer:(Player *) player{
     for(Player *playa in players){
         if([player isEqual:playa])
@@ -45,8 +50,7 @@
                           
                           options:kNilOptions
                           error:&error];
-    NSMutableArray *img = [NSMutableArray array];
-    for(NSDictionary *data in json){
+   for(NSDictionary *data in json){
         Player *player = [[Player alloc] init];
         player.name = [data objectForKey:@"name"];
         player.game = [data objectForKey:@"url"];
@@ -61,18 +65,27 @@
 
 - (void)viewDidLoad
 {
+    self.players = [NSMutableArray arrayWithCapacity:20];
     [super viewDidLoad];
     dispatch_async(kBgQueue, ^{
         NSData* data = [NSData dataWithContentsOfURL:k15MinURL];
         [self performSelectorOnMainThread:@selector(fetchedData:)
                                withObject:data waitUntilDone:YES];
     });
-    UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc]
-                                          initWithTarget:self action:@selector(handleLongPress:)];
-    lpgr.minimumPressDuration = 2.0; //seconds
-    lpgr.delegate = self;
-    [self.tableView addGestureRecognizer:lpgr];
+//    UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc]
+//                                          initWithTarget:self action:@selector(handleLongPress:)];
+//    lpgr.minimumPressDuration = 2.0; //seconds
+//    lpgr.delegate = self;
+    //[self.tableView addGestureRecognizer:lpgr];
     
+    // Change button color
+
+    
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+       
+    // Set the gesture
+    //[self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+
     //[lpgr release];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

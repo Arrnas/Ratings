@@ -50,14 +50,15 @@
 		124DF14017DF61CD00EB11C1 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 124DF13F17DF61CD00EB11C1 /* Player.m */; };
 		124DF14317DF73AA00EB11C1 /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 124DF14217DF73AA00EB11C1 /* PlayerCell.m */; };
 		124DF14617DF793900EB11C1 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124DF14517DF793900EB11C1 /* PlayerDetailsViewController.m */; };
+		12F176CE17E89EA40087CC5D /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F176C917E89EA40087CC5D /* MFSideMenuContainerViewController.m */; };
+		12F176CF17E89EA40087CC5D /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F176CB17E89EA40087CC5D /* MFSideMenuShadow.m */; };
+		12F176D017E89EA40087CC5D /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F176CD17E89EA40087CC5D /* UIViewController+MFSideMenuAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1204D5E417E34C6E004BBA73 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncImageView.h; path = AsyncImageView/AsyncImageView.h; sourceTree = "<group>"; };
 		1204D5E517E34C6E004BBA73 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncImageView.m; path = AsyncImageView/AsyncImageView.m; sourceTree = "<group>"; };
 		120B324817E1F3560036CDF0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		1244948317E7678A00D31B55 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		1244948417E7678A00D31B55 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		1244BDD817E05C87001D610D /* GamePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePickerViewController.h; sourceTree = "<group>"; };
 		1244BDD917E05C87001D610D /* GamePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
 		1244BDDB17E099A6001D610D /* PDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDetailViewController.h; sourceTree = "<group>"; };
@@ -110,6 +111,13 @@
 		124DF14217DF73AA00EB11C1 /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
 		124DF14417DF793900EB11C1 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
 		124DF14517DF793900EB11C1 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
+		12F176C717E89EA40087CC5D /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
+		12F176C817E89EA40087CC5D /* MFSideMenuContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuContainerViewController.h; sourceTree = "<group>"; };
+		12F176C917E89EA40087CC5D /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
+		12F176CA17E89EA40087CC5D /* MFSideMenuShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuShadow.h; sourceTree = "<group>"; };
+		12F176CB17E89EA40087CC5D /* MFSideMenuShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuShadow.m; sourceTree = "<group>"; };
+		12F176CC17E89EA40087CC5D /* UIViewController+MFSideMenuAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MFSideMenuAdditions.h"; sourceTree = "<group>"; };
+		12F176CD17E89EA40087CC5D /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +166,7 @@
 		124DF0ED17DF55F900EB11C1 /* Ratings */ = {
 			isa = PBXGroup;
 			children = (
-				1244948317E7678A00D31B55 /* SWRevealViewController.h */,
-				1244948417E7678A00D31B55 /* SWRevealViewController.m */,
+				12F176C617E89EA40087CC5D /* MFSideMenu */,
 				1204D5E417E34C6E004BBA73 /* AsyncImageView.h */,
 				1204D5E517E34C6E004BBA73 /* AsyncImageView.m */,
 				124DF13B17DF60F200EB11C1 /* PlayersViewController.h */,
@@ -228,6 +235,20 @@
 				124DF12217DF5EA000EB11C1 /* Players@2x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		12F176C617E89EA40087CC5D /* MFSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				12F176C717E89EA40087CC5D /* MFSideMenu.h */,
+				12F176C817E89EA40087CC5D /* MFSideMenuContainerViewController.h */,
+				12F176C917E89EA40087CC5D /* MFSideMenuContainerViewController.m */,
+				12F176CA17E89EA40087CC5D /* MFSideMenuShadow.h */,
+				12F176CB17E89EA40087CC5D /* MFSideMenuShadow.m */,
+				12F176CC17E89EA40087CC5D /* UIViewController+MFSideMenuAdditions.h */,
+				12F176CD17E89EA40087CC5D /* UIViewController+MFSideMenuAdditions.m */,
+			);
+			path = MFSideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +351,9 @@
 				1244BDDA17E05C87001D610D /* GamePickerViewController.m in Sources */,
 				1244BDDD17E099A6001D610D /* PDetailViewController.m in Sources */,
 				1204D5E617E34C6E004BBA73 /* AsyncImageView.m in Sources */,
+				12F176CE17E89EA40087CC5D /* MFSideMenuContainerViewController.m in Sources */,
+				12F176CF17E89EA40087CC5D /* MFSideMenuShadow.m in Sources */,
+				12F176D017E89EA40087CC5D /* UIViewController+MFSideMenuAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

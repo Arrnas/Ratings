@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) NSMutableArray *players;
 
+- (IBAction)sidebarMenu:(id)sender;
 -(void) recievePlayer:(Player *) player;
 -(void) fetchedData:(NSData *)responseData;
 -(void) addPlayerToList:(Player *)player;

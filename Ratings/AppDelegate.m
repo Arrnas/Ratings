@@ -8,6 +8,7 @@
 #import "AppDelegate.h"
 #import "Player.h"
 #import "PlayersViewController.h"
+#import "MFSideMenuContainerViewController.h"
 
 
 @implementation AppDelegate{
@@ -15,10 +16,13 @@
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    players = [NSMutableArray arrayWithCapacity:20];
-	UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-	PlayersViewController *playersViewController = [[navigationController viewControllers] objectAtIndex:0];
-	playersViewController.players = players;
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:[NSBundle mainBundle]];
+    MFSideMenuContainerViewController *container = (MFSideMenuContainerViewController *)self.window.rootViewController;
+    UINavigationController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"navigationController"];
+    UIViewController *leftSideMenuViewController = [storyboard instantiateViewControllerWithIdentifier:@"leftSideMenuViewController"];
+    
+    [container setLeftMenuViewController:leftSideMenuViewController];
+    [container setCenterViewController:navigationController];
     // Override point for customization after application launch.
     return YES;
 }
